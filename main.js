@@ -10,3 +10,13 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+
+
+const allInvalidLinks = document.querySelectorAll('.invalid-link')
+allInvalidLinks.forEach(link => {
+  link.onclick = (e) => {
+    e.preventDefault()
+    alert('Comming Soon...')
+  }
+})
